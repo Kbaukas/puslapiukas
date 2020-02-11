@@ -1,0 +1,102 @@
+.white_back {
+  padding-top: 1.875rem;
+
+  padding-left: 3.86%;
+  padding-right: 5.14%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  color: black;
+  p {
+    font-size: 1.0625rem;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .list {
+    width: 44%;
+    ul {
+      font-family: "OpenSans-Italic";
+      font-size: 1.06125rem;
+      // width: 50%;
+      list-style: none;
+      li {
+        display: block;
+        border-bottom: 2px solid black;
+        padding: 0.3125rem;
+        // width: 100%;
+      }
+      & :first-child {
+        border-color: #d7d7d7;
+      }
+      & :nth-child(4) {
+        border: none;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  .white_right {
+    width: 44%;
+  }
+}
+.second_content {
+  font-size: 1.06125rem;
+  padding-bottom: 5.3125rem;
+  color: white;
+  margin-top: 4.375rem;
+  background-color: $blue;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6.25rem;
+  @include responsive-md {
+    padding-bottom: 2.8125rem;
+    padding-top: 3.25rem;
+  }
+  h4 {
+    font-size: 1.1875rem;
+    font-weight: normal;
+  }
+  .left_text {
+    margin-left: 6.9%;
+    width: 24.5%;
+    & :nth-child(3) {
+      padding-top: 2.625rem;
+    }
+    @include responsive-md {
+      width: 100%;
+      margin-right: 3%;
+    }
+  }
+  h4 {
+    padding-bottom: 1.875rem;
+    font-size: 1.18625rem;
+    font-weight: 800;
+  }
+  h5 {
+    font-size: 1.0625rem;
+    font-weight: normal;
+    padding-bottom: 2.6875rem;
+  }
+  .right_text {
+    width: 59.69%;
+    padding-right: 4.6%;
+    @include responsive-md {
+      padding-top: 2rem;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  @include responsive-md {
+    flex-wrap: wrap;
+  }
+}
+.top_right {
+  padding-bottom: 2.8125rem;
+  @include responsive-md {
+    padding-bottom: 2.8125rem;
+    padding-left: 6.9%;
+    margin-right: 3%;
+  }
+}

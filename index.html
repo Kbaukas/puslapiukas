@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="whole_page">
+      <!--Start  navigacija -->
+      <nav>
+        <div class="top_nav">
+          <div class="meniu">
+            <ul>
+              <li><a href="">MENIU</a></li>
+              <li><p>|</p></li>
+              <li><a href="">SOME TEXT</a></li>
+              <li><p>|</p></li>
+              <li><a href="">ANOTHER ITEM</a></li>
+              <li><p>|</p></li>
+              <li><a href="">ONE MORE</a></li>
+              <li><p>|</p></li>
+              <li><a href="">AND LAST ONE</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="colapse_top" onclick="myFunction3()">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="bottom_nav">
+          <h1>DEMOSITE</h1>
+          <div class="meniu" id="meniu_top">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">SERVICE</a></li>
+              <li id="works">
+                <a onclick="myFunction()" href="">WORKS </a>
+                <ul class="works_meniu" id="works_meniu_id">
+                  <li class="arrow"></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">GRAPHICS</a></li>
+                  <li><a href="">DESIGN</a></li>
+                  <li><a href="">LOGO</a></li>
+                  <li><a href="">WEBSITE</a></li>
+                </ul>
+              </li>
+              <li><a href="">ABOUT ME</a></li>
+              <li><a href="">CONTACTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End navigacija -->
+      <main>
+        <!-- Start pirmas kontentas -->
+        <div class="first_content">
+          <section class="welcome">
+            <div>
+              <h2>WELCOME</h2>
+              <div class="white_line"></div>
+              <p>
+                Sed laoreet magna at neque sollic-i-tudin, quis tristique ipsum
+                per molestie. Class apt ent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Vestibulum facilisis
+                malesuada. Integer rhoncus laoreet velit
+              </p>
+              <a href="#">LEARN MORE</a>
+            </div>
+          </section>
+          <section class="pic_text">
+            <div class="pic"></div>
+            <div class="text">
+              <h3>UI/UX DESIGN</h3>
+              <p>
+                Fusce posuere et males uada est, nec convallis euis mod. Nam
+                eleifen elitinex placerat semper vitae et enim.
+              </p>
+
+              <p>
+                Males uada est, nec convallis euis mod. Nam eleifen elitinex
+                placerat.
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- End pirmas kontentas -->
+        <!-- Start Antras kontentas -->
+        <section class="second_content">
+          <div class="left_text">
+            <h4>WEB DEVELOPMENT</h4>
+            <p>
+              Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+              ut. Integer nec ex accumsan, suscipit eros a, tempus nisi.
+              Suspendisse pretium elementum.
+            </p>
+            <p>
+              Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+              ut. Integer nec ex accumsan, suscipit eros a, tempus nisi.
+              Suspendisse pretium elementum.
+            </p>
+          </div>
+          <div class="right_text">
+            <div class="top_right">
+              <h4>WIREFRAME</h4>
+              <p>
+                Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+                ut.
+              </p>
+            </div>
+            <div class="white_back">
+              <div class="list">
+                <h4>CUSTOM LIST</h4>
+                <h5>SOME HEADING</h5>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                  <li>Item 4</li>
+                </ul>
+              </div>
+              <div class="white_right">
+                <h4>Web Development</h4>
+                <p>
+                  Phasellus interdum aliquam eros, vitae vestibulum elit
+                  malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end antras kontentas -->
+        <!-- Start contact -->
+        <section class="contact">
+          <div class="left_text">
+            <h1>CONTACT</h1>
+            <div class="black_line"></div>
+            <p>
+              Cras feugiat tortor vitae ultrices euismod. Aliquam mollis urna
+              ex, sit amet fermentum diam convallis at. Integer mauris eros,
+              rutrum id pharetra nec, tincidunt quis sem. <br /><br />
+
+              Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+              ut. Integer nec ex accumsan, suscipit eros a, tempus nisi.
+              Suspendisse pretium elementum. <br /><br />
+              Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+              ut. Integer nec ex accumsan, suscipit eros a, tempus nisi.
+              Suspendisse pretium elementum.
+            </p>
+          </div>
+          <div class="contact_form">
+            <form action="">
+              <label for="name">NAME</label>
+              <input id="name" type="text" />
+              <label for="email">EMAIL</label>
+              <input id="email" type="email" />
+              <label for="text_area">MESSAGE</label>
+              <textarea name="" id="text_area" cols="30" rows="10"></textarea>
+              <input type="submit" value="SEND" />
+            </form>
+          </div>
+        </section>
+        <!-- End contact -->
+      </main>
+      <!-- Start footer -->
+      <footer>
+        <div class="text">
+          <p>
+            Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
+            Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse
+            pretium elementum.<br />
+            Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
+            Integer nec
+          </p>
+        </div>
+        <div class="colapse" onclick="myFunction2()">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="meniu" id="meniu_id">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">WORKS</a></li>
+            <li><a href="">ABOUT ME</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <p class="bottom_copy">© DEMOSITE All right reserved</p>
+      </footer>
+    </section>
+
+    <script src="assets/js/style.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+$font: "Open Sans", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $font;
+  // width: 1620px;
+  margin: 0 auto;
+}
+
+// fonts
+
+.whole_page {
+  width: 80%;
+  background-color: rgba(151, 163, 151, 0.281);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// color
+$grey: #d7d7d7;
+$blue: #448ccb;
+@mixin background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// media mixinai
+@mixin responsive-xs {
+  @media (min-width: 578px) {
+  }
+}
+@mixin media_650 {
+  @media (min-width: 650px) {
+  }
+}
+
+@mixin responsive-sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin responsive-793 {
+  @media (max-width: 793px) {
+    @content;
+  }
+}
+@mixin responsive-900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin responsive-md {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin responsive-1100 {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+@mixin responsive-lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin responsive-1330 {
+  @media (max-width: 1330px) {
+    @content;
+  }
+}
+@mixin responsive-xl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+@mixin responsive-1460 {
+  @media (max-width: 1460px) {
+    @content;
+  }
+}

@@ -1,0 +1,101 @@
+.contact {
+  color: #1e2123;
+  padding-bottom: 4.75rem;
+  padding-top: 5rem;
+  display: flex;
+  //   justify-content: space-between;
+  width: 100%;
+  .left_text {
+    width: 53.5%;
+    padding-left: 6.9%;
+    p {
+      font-size: 1.0625rem;
+      line-height: 24.98px;
+    }
+    h1 {
+      font-size: 2.5625rem;
+      font-weight: 800;
+      padding-bottom: 2.8125rem;
+      color: #1e2123;
+      @include responsive-lg {
+        width: 50%;
+        padding-bottom: 1.8125rem;
+      }
+    }
+    @include responsive-lg {
+      width: 50%;
+    }
+    @include responsive-793 {
+      width: 100%;
+    }
+  }
+  .contact_form {
+    margin-left: 6.385%;
+    width: 27.6%;
+    padding-top: 12.375rem;
+    input[type*="text"],
+    input[type*="email"],
+    textarea {
+      border: 3px solid #e8e8e9;
+      margin-bottom: 0.8rem;
+      width: 100%;
+      resize: none;
+      font-size: 0.9375rem;
+      //   margin-bottom: 2.875rem;
+      padding: 1rem;
+    }
+    // input[type*="email"] ::placeholder {
+    //   //   font-family: $font;
+    //   font-size: 0.9375rem;
+    //   font-weight: 800;
+    // }
+    label {
+      display: block;
+      padding-bottom: 0.8125rem;
+      font-size: 0.9375rem;
+      font-weight: bold;
+    }
+    input[type*="text"] {
+      margin: 0;
+    }
+    input[type*="text"]:hover,
+    input[type*="text"]:focus,
+    input[type*="email"]:hover,
+    input[type*="email"]:focus,
+    textarea:hover,
+    textarea:focus {
+      border: 3px solid black;
+      outline: none;
+    }
+    input[type*="submit"] {
+      padding: 0.45rem 0.7rem;
+      border: 3px solid #0c9aec;
+      background: none;
+      color: #0c9aec;
+      font-size: 0.9375rem;
+      font-weight: 800;
+    }
+    @include responsive-xl {
+      width: 35%;
+    }
+    @include responsive-lg {
+      width: 45%;
+    }
+    @include responsive-793 {
+      width: 100%;
+      padding-top: 4.375rem;
+    }
+  }
+  .black_line {
+    width: 3.75rem;
+    height: 0.625rem;
+    background-color: black;
+    margin-bottom: 6.375rem;
+    @include responsive-793 {
+      margin-bottom: 3.375rem;
+    }
+  }
+  @include responsive-793 {
+    flex-wrap: wrap;
+  }
+}

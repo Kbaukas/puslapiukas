@@ -1,0 +1,15 @@
+{
+  "name": "adeo",
+  "version": "1.0.0",
+  "description": "Uzduotis",
+  "main": "java.js",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "sass": "node-sass assets/scss/style.scss  assets/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

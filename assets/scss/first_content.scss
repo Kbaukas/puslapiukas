@@ -1,0 +1,121 @@
+main {
+  background-color: white;
+  padding-top: 4.375rem;
+}
+.first_content {
+  display: flex;
+  justify-content: space-evenly;
+  @include responsive-sm {
+    flex-wrap: wrap;
+  }
+}
+.welcome {
+  // display: flex;
+  width: 24.6%;
+  color: white;
+  background-color: $blue;
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  // padding-bottom: 4.375rem;
+  @include responsive-1330 {
+    width: 35%;
+  }
+  @include responsive-md {
+    margin-right: 0.2rem;
+    width: 42%;
+    // margin-right: 0.5rem;
+  }
+  @include responsive-sm {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.5625rem;
+    font-weight: 800;
+  }
+  p {
+    padding-top: 1.5rem;
+    font-family: $font;
+    font-size: 1.0625rem;
+    padding-bottom: 6rem;
+    @include responsive-1460 {
+      padding-bottom: 5.5rem;
+    }
+    // @include responsive-sm {
+    //   padding-bottom: 1rem;
+    // }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9375rem;
+    margin-left: auto;
+    width: 7.9rem;
+
+    background-color: #0c9aec;
+    border: 2px solid white;
+    padding: 0.4rem 0.5rem;
+    @include responsive-sm {
+      margin: 0 auto 1rem auto;
+    }
+  }
+}
+.white_line {
+  width: 3.75rem;
+  height: 0.625rem;
+  background-color: white;
+}
+.pic_text {
+  width: 49.2%;
+  margin-right: 6%;
+  @include responsive-md {
+    width: 58.2%;
+    margin-right: 0;
+  }
+  @include responsive-sm {
+    width: 100%;
+  }
+
+  .pic {
+    background-image: url("../img/img.png");
+    height: 20.5rem;
+    // width: 49.2%;
+    @include background;
+    @include responsive-lg {
+      background-size: 515px 328px;
+    }
+    @include responsive-sm {
+      background-position: -28px;
+      background-size: 642px 328px;
+    }
+    // @include responsive-xs {
+    //   background-position: -100px;
+    // }
+  }
+  .text {
+    background-color: $grey;
+    padding-right: 9.769%;
+    padding-left: 6.1538%;
+    padding-top: 2.5rem;
+    p {
+      // font-family: $fonts;
+      padding-top: 0.5rem;
+      font-size: 1.06125rem;
+      // font-size: 1.0625rem;
+      line-height: 25px;
+      color: #1e2123;
+    }
+    &:nth-child(2) {
+      padding-bottom: 3rem;
+    }
+    h3 {
+      font-size: 1.18625rem;
+      font-weight: 800;
+      color: #1e2123;
+    }
+  }
+}

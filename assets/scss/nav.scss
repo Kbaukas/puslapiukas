@@ -1,0 +1,179 @@
+nav {
+  position: relative;
+  background-color: $blue;
+  color: white;
+  padding-bottom: 3rem;
+}
+.top_nav {
+  padding-top: 0.9375rem;
+  margin-right: 3.15%;
+  margin-left: 6.9%;
+  font-size: 0.75rem;
+  .meniu {
+    position: relative;
+    ul {
+      list-style: none;
+      display: flex;
+      // justify-content: space-evenly;
+      li {
+        padding-left: 5px;
+        display: block;
+        a {
+          display: block;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    ul :first-child {
+      padding: 0;
+    }
+  }
+}
+// -------bottom nav-----
+.bottom_nav {
+  // position: relative;
+  font-size: 0.9375rem;
+
+  display: flex;
+  padding-top: 0.9375rem;
+  margin-right: 3.15%;
+  margin-left: 6.9%;
+  align-items: center;
+  .meniu {
+    margin-left: auto;
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        position: relative;
+        padding-left: 2rem;
+        @include responsive-900 {
+          padding: 0.8rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 0.9375rem;
+          text-decoration: none;
+          color: white;
+        }
+        /*#work:hover + #works_meniu_id:hover 
+          display: flex;
+          
+          transition: all 2s ease;
+        }*/
+        // a:hover {
+        //   color: #1e2123;
+        // }
+
+        .works_meniu {
+          font-size: 0.6875rem;
+          font-weight: light;
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          padding: 0 0.3rem;
+          width: 10rem;
+          right: -55.3%;
+          top: 169%;
+          background-color: black;
+
+          li {
+            padding-left: 0;
+
+            a {
+              display: block;
+              padding: 0;
+              margin: 0;
+              // line-height: 1rem;
+              padding: 0.5rem 0 0.5rem 1rem;
+            }
+          }
+          a:hover {
+            background-color: white;
+
+            color: black;
+          }
+
+          .arrow {
+            // display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+
+            background-color: black;
+            right: 45%;
+            top: -3%;
+          }
+          & :nth-child(2) {
+            margin-top: 1.2rem;
+            // border-top: 1.2rem;
+          }
+          @include responsive-900 {
+            width: 50%;
+            position: initial;
+            flex-direction: row;
+          }
+        }
+      }
+      @include responsive-900 {
+        display: block;
+        width: 100%;
+      }
+      & :nth-child(even) {
+        @include responsive-900 {
+          background-color: black;
+        }
+      }
+    }
+    @include responsive-900 {
+      display: none;
+      position: absolute;
+      right: 0%;
+      bottom: -119%;
+      background-color: rgb(128, 128, 128);
+      transition: all 0.5s ease;
+      width: 100%;
+    }
+  }
+  // #works:hover #works_meniu_id {
+  //   display: flex;
+  //   // background-color: blanchedalmond;
+  //   // color: #1e2123;
+  // }
+  .works_meniu :nth-child(6) {
+    padding-bottom: 1.2rem;
+    // border-top: 1.2rem;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 1.6875rem;
+  }
+}
+// -------colapse meniu-----
+.colapse_top {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  cursor: pointer;
+  height: fit-content;
+  right: 6%;
+  bottom: 32%;
+  div {
+    width: 3rem;
+    margin-bottom: 0.3rem;
+    height: 0.2rem;
+    background-color: rgb(250, 248, 245);
+  }
+  @include responsive-900 {
+    display: block;
+  }
+}
+.fade {
+  transition: all 1s ease;
+}
